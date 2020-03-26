@@ -29,7 +29,27 @@ class HomePage extends StatelessWidget {
                   height: statusBarWidth,
                   color: Color.fromARGB(250, 255, 255, 255)
               ),
-              AppBarHome()
+              AppBarHome(),
+              Expanded(
+                child: Container(
+                    child: ListView(
+                      children: <Widget>[
+                        ListTile(title: Text('Pikachu')),
+                        ListTile(title: Text('Charizard')),
+                        ListTile(title: Text('Dragonite')),
+                        ListTile(title: Text('Jigllypuf')),
+                        ListTile(title: Text('Pikachu')),
+                        ListTile(title: Text('Charizard')),
+                        ListTile(title: Text('Dragonite')),
+                        ListTile(title: Text('Jigllypuf')),
+                        ListTile(title: Text('Pikachu')),
+                        ListTile(title: Text('Charizard')),
+                        ListTile(title: Text('Dragonite')),
+                        ListTile(title: Text('Jigllypuf')),
+                      ],
+                    )
+                ),
+              ),
             ],
           ),
         ),
