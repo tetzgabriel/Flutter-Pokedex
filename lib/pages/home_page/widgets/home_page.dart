@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/consts/consts_app.dart';
-import 'package:pokedex/main.dart';
+import 'package:pokedex/pages/home_page/widgets/app_bar_home.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -27,32 +27,9 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Container(
                   height: statusBarWidth,
+                  color: Color.fromARGB(250, 255, 255, 255)
               ),
-              Container(
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          IconButton(
-                            icon: Icon(Icons.menu),
-                            onPressed: () {} ,
-                          )
-                        ],
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: <Widget>[
-                        Text('Pokedex'),
-                      ],
-                    )
-                  ],
-                ),
-//                color: Colors.red,
-                height: 150,
-              )
+              AppBarHome()
             ],
           ),
         ),
