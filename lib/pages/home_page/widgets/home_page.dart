@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/consts/consts_app.dart';
-import 'package:pokedex/main.dart';
+import 'package:pokedex/pages/home_page/widgets/app_bar_home.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -27,32 +27,29 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               Container(
                   height: statusBarWidth,
+                  color: Color.fromARGB(250, 255, 255, 255)
               ),
-              Container(
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          IconButton(
-                            icon: Icon(Icons.menu),
-                            onPressed: () {} ,
-                          )
-                        ],
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+              AppBarHome(),
+              Expanded(
+                child: Container(
+                    child: ListView(
                       children: <Widget>[
-                        Text('Pokedex'),
+                        ListTile(title: Text('Pikachu')),
+                        ListTile(title: Text('Charizard')),
+                        ListTile(title: Text('Dragonite')),
+                        ListTile(title: Text('Jigllypuf')),
+                        ListTile(title: Text('Pikachu')),
+                        ListTile(title: Text('Charizard')),
+                        ListTile(title: Text('Dragonite')),
+                        ListTile(title: Text('Jigllypuf')),
+                        ListTile(title: Text('Pikachu')),
+                        ListTile(title: Text('Charizard')),
+                        ListTile(title: Text('Dragonite')),
+                        ListTile(title: Text('Jigllypuf')),
                       ],
                     )
-                  ],
                 ),
-//                color: Colors.red,
-                height: 150,
-              )
+              ),
             ],
           ),
         ),
